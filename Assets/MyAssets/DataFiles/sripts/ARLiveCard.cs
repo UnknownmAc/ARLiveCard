@@ -9,7 +9,7 @@ using System;
 public class ARLiveCard : MonoBehaviour, IVirtualButtonEventHandler {
 	public GameObject videoPlaneGo;
 	public GameObject playButton;
-	public GameObject gmail_cube, facebook_cube, map_cube, calendar_cube;
+	public GameObject gmail_cube, facebook_cube, map_cube, calendar_cube, detail_cube;
 
 
 	static bool bIsFacebookOpened;
@@ -53,6 +53,7 @@ public class ARLiveCard : MonoBehaviour, IVirtualButtonEventHandler {
 		facebook_cube.SetActive (false);
 		map_cube.SetActive (false);
 		calendar_cube.SetActive (false);
+		detail_cube.SetActive (false);
 
 		bIsFacebookOpened = false;
 		bIsGmailOpened = false;
@@ -70,7 +71,9 @@ public class ARLiveCard : MonoBehaviour, IVirtualButtonEventHandler {
 
 			bool targetHit = false;
 
-			if (hit.collider.gameObject.name == "facebook_cube" && !bIsFacebookOpened) {
+			if (hit.collider.gameObject.name == "detail_cube") {
+				Application.LoadLevel ("FullCard");
+			} else if (hit.collider.gameObject.name == "facebook_cube" && !bIsFacebookOpened) {
 				Application.OpenURL ("https://www.facebook.com");
 				bIsFacebookOpened = true;
 				targetHit = true;
@@ -81,12 +84,12 @@ public class ARLiveCard : MonoBehaviour, IVirtualButtonEventHandler {
 			} else if (hit.collider.gameObject.name == "map_cube" && !bIsMapOpened) {
 				targetHit = true;
 				bIsMapOpened = true;
-				Application.OpenURL("https://www.google.co.in/maps/dir//Balrampur+Gardens,+23,+Ashok+Marg,+Hazratganj,+Lucknow,+Uttar+Pradesh+226001/@26.8549521,80.8804845,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x399bfd0c3ba16e03:0x3255312237e4f1cc!2m2!1d80.9505259!2d26.8548162");
-			} else if(hit.collider.gameObject.name == "calendar_cube" && !bIsCalendarOpened) {
+				Application.OpenURL ("https://www.google.co.in/maps/dir//Balrampur+Gardens,+23,+Ashok+Marg,+Hazratganj,+Lucknow,+Uttar+Pradesh+226001/@26.8549521,80.8804845,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x399bfd0c3ba16e03:0x3255312237e4f1cc!2m2!1d80.9505259!2d26.8548162");
+			} else if (hit.collider.gameObject.name == "calendar_cube" && !bIsCalendarOpened) {
 				bIsCalendarOpened = true;
 				targetHit = true;
-				Application.OpenURL("https://calendar.google.com/calendar/r/day/2012/11/29");
-			}
+				Application.OpenURL ("https://calendar.google.com/calendar/r/day/2012/11/29");
+			} 
 		}
 
 		VideoPlayer videoPlayer = videoPlaneGo.GetComponentInChildren <VideoPlayer> ();
@@ -96,6 +99,7 @@ public class ARLiveCard : MonoBehaviour, IVirtualButtonEventHandler {
 			facebook_cube.SetActive (true);
 			map_cube.SetActive (true);
 			calendar_cube.SetActive (true);
+			detail_cube.SetActive (true);
 		}
 	}
 

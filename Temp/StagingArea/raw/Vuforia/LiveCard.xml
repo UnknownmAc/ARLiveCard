@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="reminder_marker" size="50.000000 46.120689" />
+    <ImageTarget name="rsvp_marker" size="50.000000 15.056818" />
+    <ImageTarget name="location_marker" size="50.000000 17.295597" />
+    <ImageTarget name="video_marker" size="50.000000 28.662420" />
+  </Tracking>
+</QCARConfig>

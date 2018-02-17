@@ -8,3 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyAssets/DataFiles/Scenes/ARCard.unity
     guid: cfb08232ea364470d97ba76c70a49a0c
+  - enabled: 1
+    path: Assets/MyAssets/DataFiles/Scenes/FullCard.unity
+    guid: b5ea4a9f279d37740b3ef34f42035098

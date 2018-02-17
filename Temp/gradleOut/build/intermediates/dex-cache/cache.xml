@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/niskumar/Work/niskumar/unity/ARCard/Temp/gradleOut/libs/unity-classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="997bed8c5290bdbae5c8767ba09af501f19e1c08">
+        <dex dex="/Users/niskumar/Work/niskumar/unity/ARCard/Temp/gradleOut/build/intermediates/pre-dexed/release/unity-classes_6f2f219046b69b9ab6f1aa35bf62647bc372c999.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/niskumar/.android/build-cache/3c0d5d2f956aea5315781d0c581eb3ed6b130b6a/output/jars/libs/VuforiaUnityPlayer.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="1e5c98f1d2f1973f9a08b7849f319bcb135fe8c3">
+        <dex dex="/Users/niskumar/Work/niskumar/unity/ARCard/Temp/gradleOut/build/intermediates/pre-dexed/release/VuforiaUnityPlayer_c8f5c2cb64cf818776567c8da042e89fb63b382a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/niskumar/.android/build-cache/3c0d5d2f956aea5315781d0c581eb3ed6b130b6a/output/jars/libs/Vuforia.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="53094572566d88f826439518bd3ff774b3ed36cb">
+        <dex dex="/Users/niskumar/Work/niskumar/unity/ARCard/Temp/gradleOut/build/intermediates/pre-dexed/release/Vuforia_456d87334a547d763f5ea62621be61ade4353157.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/niskumar/.android/build-cache/3c0d5d2f956aea5315781d0c581eb3ed6b130b6a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="e29373b760f2999cd878625efe4641edd156a3d0">
+        <dex dex="/Users/niskumar/Work/niskumar/unity/ARCard/Temp/gradleOut/build/intermediates/pre-dexed/release/classes_dae5adbe5911207de10b682607b0d91d4b1f2f60.jar" />
+    </item>
+
+</items>
