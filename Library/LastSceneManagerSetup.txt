@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/MyAssets/DataFiles/Scenes/ARCard.unity
+  isLoaded: 1
+  isActive: 1
